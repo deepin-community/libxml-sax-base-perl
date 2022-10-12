@@ -1,0 +1,28 @@
+Source: libxml-sax-base-perl
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Uploaders: Florian Schlichting <fsfs@debian.org>
+Section: perl
+Priority: optional
+Build-Depends: debhelper (>= 9)
+Build-Depends-Indep: perl
+Standards-Version: 4.1.0
+Vcs-Browser: https://anonscm.debian.org/cgit/pkg-perl/packages/libxml-sax-base-perl.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-perl/packages/libxml-sax-base-perl.git
+Homepage: https://metacpan.org/release/XML-SAX-Base
+Testsuite: autopkgtest-pkg-perl
+
+Package: libxml-sax-base-perl
+Architecture: all
+Depends: ${misc:Depends},
+         ${perl:Depends}
+Breaks: libxml-sax-perl (<< 0.99+dfsg-1)
+Replaces: libxml-sax-perl (<< 0.99+dfsg-1)
+Description: base class for SAX drivers and filters
+ XML::SAX::Base is a base class for PerlSAX drivers and filters.  The main
+ advantages that it provides are easy dispatching of events the right way (ie
+ it takes care for you of checking that the handler has implemented that
+ method, or has defined an AUTOLOAD), and the guarantee that filters will pass
+ along events that they aren't implementing to handlers downstream that might
+ nevertheless be interested in them.
+ .
+ This package also provides XML::SAX::Exception.

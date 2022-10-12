@@ -1,0 +1,49 @@
+libxml-sax-base-perl (1.09-1.1) unstable; urgency=medium
+
+  * Non maintainer upload by the Reproducible Builds team.
+  * No source change upload to rebuild on buildd with .buildinfo files.
+
+ -- Holger Levsen <holger@debian.org>  Mon, 21 Dec 2020 16:02:32 +0100
+
+libxml-sax-base-perl (1.09-1) unstable; urgency=medium
+
+  [ gregor herrmann ]
+  * New upstream release.
+  * debian/control: update {versioned,alternative} (build) dependencies.
+  * debian/copyright: update wording of Comment about copyright
+    ownership.
+
+  [ Salvatore Bonaccorso ]
+  * Change Vcs-Git to canonical URI (git://anonscm.debian.org)
+  * Change search.cpan.org based URIs to metacpan.org based URIs
+
+  [ Axel Beckert ]
+  * debian/copyright: migrate pre-1.0 format to 1.0 using "cme fix dpkg-
+    copyright"
+
+  [ gregor herrmann ]
+  * Strip trailing slash from metacpan URLs.
+
+  [ Salvatore Bonaccorso ]
+  * Update Vcs-Browser URL to cgit web frontend
+
+  [ gregor herrmann ]
+  * debian/copyright: change Copyright-Format 1.0 URL to HTTPS.
+
+  [ Florian Schlichting ]
+  * New upstream version 1.09
+  * Email change: Florian Schlichting -> fsfs@debian.org
+  * Add upstream metadata
+  * Mark package autopkgtest-able
+  * Bump dh compat to level 9
+  * Use canonical Vcs-Git format
+  * Declare compliance with Debian Policy 4.1.0
+  * Do not ship BuildSAXBase.pl
+
+ -- Florian Schlichting <fsfs@debian.org>  Sat, 16 Sep 2017 21:24:54 +0200
+
+libxml-sax-base-perl (1.07-1) unstable; urgency=low
+
+  * Initial Release. (Closes: #641161)
+
+ -- Florian Schlichting <fschlich@zedat.fu-berlin.de>  Sun, 11 Sep 2011 20:15:09 +0000
